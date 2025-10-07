@@ -1,6 +1,6 @@
 
 # USA Real Estate Price Prediction — Capstone Project
-Here is link to the notebook  - https://github.com/Mawitey/Final_Capstone_Project/blob/main/Final_Capstone_Project.ipynb
+Here is link to the notebook  - https://github.com/Mawitey/Final_Capstone_Project/blob/main/USA_REAL_ESTATE_PREDICTION.ipynb
 
 ###  Problem statement
 The goal of this project is to predict home price categories in the U.S. real estate market — Low, Medium, High, or Luxury — based on property features such as house size, bedrooms, bathrooms, and location.
@@ -25,34 +25,36 @@ Main features: bedrooms, bathrooms, lot size, house size, city, and state.
 - Split dataset: 80% training / 20% testing.
 
 #### Exploratory Analysis
-- Histograms showed data distributions for price, bed, bath, and house size.
-- Correlation analysis revealed strong positive relationships between house size, number of bedrooms, and price.
-- Outliers confirmed the wide range of home prices across different states.
+The dataset was explored visually and statistically to understand distributions and relationships among variables.
+- **Histograms** showed data distributions for price, bed, bath, and house size.
+- **Correlation heatmap** revealed strong positive relationships between house size, number of bedrooms, and price.
+- **Scatter plots** illustrated clear upward trends — as house size and number of bedrooms increased, price tended to rise.
 
 
 ### Results
 #### Models Used
 | Model | Description | Accuracy | Notes |
 |--------|--------------|-----------|--------|
-| Logistic Regression | Baseline linear classifier | **59%** | Simple and interpretable baseline. |
-| Decision Tree (GridSearchCV) | Tuned for depth and split criteria | **72%** | Best-performing model overall. |
-| K-Nearest Neighbors (KNN) | Tested with k = [3,5,7] | **64%** | Moderate accuracy, slower for large data. |
-| Support Vector Machine (SVM) | Simplified randomized search | **60%** | Balanced but computationally heavy. |
-| Neural Network (Keras/TensorFlow) | 1 hidden layer (100 ReLU units) | **63%** | Captured complex patterns effectively. |
+| Logistic Regression | Baseline linear classifier | **55.7%** | Simple and interpretable baseline. |
+| Decision Tree (GridSearchCV) | Tuned for depth and split criteria | **71.2%** | Best-performing model overall. |
+| K-Nearest Neighbors (KNN) | Tested with k = [3,5,7] | **60.8%** | Moderate accuracy, slower for large data. |
+| Support Vector Machine (SVM) | Simplified randomized search | **57.7%** | Balanced but computationally heavy. |
+| Neural Network (Keras/TensorFlow) | 1 hidden layer (100 ReLU units) | **65.8%** | Captured complex patterns effectively. |
 
 #### Model Performance Summary
 | Model | Accuracy | Precision | Recall | F1-score |
 |--------|-----------|------------|---------|-----------|
-| Decision Tree | 0.720 | 0.722 | 0.720 | 0.716 |
-| KNN | 0.644 | 0.643 | 0.644 | 0.642 |
-| SVM | 0.596 | 0.596 | 0.596 | 0.581 |
-| Neural Network | 0.633 | — | — | — |
+| Logistic Regression | 0.557 | 0.57 | 0.56 | 0.54 |
+| Decision Tree | 0.712 | 0.72 | 0.71 | 0.71 |
+| KNN | 0.608 | 0.61 | 0.61 | 0.61 |
+| SVM | 0.577 | 0.58 | 0.58 | 0.57 |
+| Neural Network | 0.658 | — | — | — |
 
 
-- Decision Tree achieved the highest accuracy (≈72%) and balanced precision/recall.
+- Decision Tree achieved the highest accuracy (71%) and balanced precision/recall.
 - KNN and Neural Network performed moderately well.
 - SVM achieved 60% accuracy but was optimized for speed.
-- The Neural Network accuracy (63%) shows that even a simple deep learning model can generalize well on structured data.
+- The Neural Network accuracy (65.8%) shows that even a simple deep learning model can generalize well on structured data.
 
 
 ### Findings
