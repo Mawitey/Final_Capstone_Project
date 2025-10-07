@@ -26,9 +26,9 @@ Main features: bedrooms, bathrooms, lot size, house size, city, and state.
 
 #### Exploratory Analysis
 The dataset was explored visually and statistically to understand distributions and relationships among variables.
-- **Histograms** showed data distributions for price, bed, bath, and house size.
-- **Correlation heatmap** revealed strong positive relationships between house size, number of bedrooms, and price.
-- **Scatter plots** illustrated clear upward trends — as house size and number of bedrooms increased, price tended to rise.
+- **Histograms:** showed data distributions for price, bed, bath, and house size.
+- **Correlation heatmap:** revealed strong positive relationships between house size, number of bedrooms, and price.
+- **Scatter plots:** illustrated clear upward trends — as house size and number of bedrooms increased, price tended to rise.
 
 
 ### Results
@@ -65,5 +65,6 @@ The dataset was explored visually and statistically to understand distributions 
 - Clean, well-scaled data is critical — dropping missing values and standardizing features improved model reliability.
 
 ### Next steps
+- Tune hyperparameters for Decision Trees and Neural Networks.
 - Add more details about location, such as neighborhood or nearby schools, region, distance to city center, or average income.
 - Make the model available through a web app where users can enter property details and get a price category instantly.
