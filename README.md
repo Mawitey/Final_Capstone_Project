@@ -19,10 +19,10 @@ Target variable: price_category derived from price values:
 Main features: bedrooms, bathrooms, lot size, house size, city, and state.
 
 #### Data Preparation
-Removed missing rows for clean, consistent input.
-Encoded categorical variables (LabelEncoder for high-cardinality columns, OneHotEncoder for smaller ones).
-Standardized numerical features for balanced model training.
-Split dataset: 80% training / 20% testing.
+ -Removed missing rows for clean, consistent input.
+ -Encoded categorical variables (LabelEncoder for high-cardinality columns, OneHotEncoder for smaller ones).
+ -Standardized numerical features for balanced model training.
+ -Split dataset: 80% training / 20% testing.
 
 #### Exploratory Analysis
 Histograms showed data distributions for price, bed, bath, and house size.
