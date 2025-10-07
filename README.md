@@ -21,13 +21,13 @@ Main features: bedrooms, bathrooms, lot size, house size, city, and state.
 #### Data Preparation
 - Removed missing rows for clean, consistent input.
 - Encoded categorical variables (LabelEncoder for high-cardinality columns, OneHotEncoder for smaller ones).
-- **Standardized numerical features for balanced model training.
-- **Split dataset: 80% training / 20% testing.
+- Standardized numerical features for balanced model training.
+- Split dataset: 80% training / 20% testing.
 
 #### Exploratory Analysis
-Histograms showed data distributions for price, bed, bath, and house size.
-Correlation analysis revealed strong positive relationships between house size, number of bedrooms, and price.
-Outliers confirmed the wide range of home prices across different states.
+- Histograms showed data distributions for price, bed, bath, and house size.
+- Correlation analysis revealed strong positive relationships between house size, number of bedrooms, and price.
+- Outliers confirmed the wide range of home prices across different states.
 
 
 ### Results
@@ -49,19 +49,19 @@ Outliers confirmed the wide range of home prices across different states.
 | Neural Network | 0.633 | — | — | — |
 
 
-Decision Tree achieved the highest accuracy (≈72%) and balanced precision/recall.
-KNN and Neural Network performed moderately well.
-SVM achieved 60% accuracy but was optimized for speed.
-The Neural Network accuracy (63%) shows that even a simple deep learning model can generalize well on structured data.
+- Decision Tree achieved the highest accuracy (≈72%) and balanced precision/recall.
+- KNN and Neural Network performed moderately well.
+- SVM achieved 60% accuracy but was optimized for speed.
+- The Neural Network accuracy (63%) shows that even a simple deep learning model can generalize well on structured data.
 
 
 ### Findings
-House size, bedrooms, and bathrooms are the most influential features affecting price.
-Decision Tree is the best-performing algorithm for this dataset — combining interpretability and accuracy.
-Simplified model tuning (using smaller parameter grids and fewer folds) drastically reduced computation time without losing much accuracy.
-Neural Networks matched KNN and SVM in accuracy, proving that even simple architectures can capture meaningful patterns.
-Clean, well-scaled data is critical — dropping missing values and standardizing features improved model reliability.
+- House size, bedrooms, and bathrooms are the most influential features affecting price.
+- Decision Tree is the best-performing algorithm for this dataset — combining interpretability and accuracy.
+- Simplified model tuning (using smaller parameter grids and fewer folds) drastically reduced computation time without losing much accuracy.
+- Neural Networks matched KNN and SVM in accuracy, proving that even simple architectures can capture meaningful patterns.
+- Clean, well-scaled data is critical — dropping missing values and standardizing features improved model reliability.
 
 ### Next steps
-Add more details about location, such as neighborhood or nearby schools.
-Make the model available through a web app where users can enter property details and get a price category instantly.
+- Add more details about location, such as neighborhood or nearby schools, region, distance to city center, or average income.
+- Make the model available through a web app where users can enter property details and get a price category instantly.
