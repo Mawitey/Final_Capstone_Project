@@ -53,7 +53,7 @@ The dataset was explored visually and statistically to understand distributions 
 
 - Decision Tree achieved the highest accuracy (71%) and balanced precision/recall.
 - KNN and Neural Network performed moderately well.
-- SVM achieved 60% accuracy but was optimized for speed.
+- SVM achieved 57.7% accuracy but was optimized for speed.
 - The Neural Network accuracy (65.8%) shows that even a simple deep learning model can generalize well on structured data.
 
 
