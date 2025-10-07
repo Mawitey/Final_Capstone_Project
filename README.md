@@ -11,10 +11,10 @@ By building and comparing several machine learning models, the project identifie
 #### Data Overview
 Source: Realtor.com dataset (1,084,909 rows).
 Target variable: price_category derived from price values:
-Low: < $200,000
-Medium: $200,000–$500,000
-High: $500,000–$1,000,000
-Luxury: > $1,000,000
+- **Low:** < $200,000  
+- **Medium:** $200,000 – $500,000  
+- **High:** $500,000 – $1,000,000  
+- **Luxury:** > $1,000,000 
 Main features: bedrooms, bathrooms, lot size, house size, city, and state.
 
 #### Data Preparation
@@ -32,13 +32,14 @@ Outliers confirmed the wide range of home prices across different states.
 ### Results
 #### Models Used
 | Model | Description | Accuracy | Notes |
-|---|---|---|
-| Logistic Regression | Baseline linear classifier | 59% | Simple and interpretable baseline. |
-| Decision Tree (GridSearchCV) | Tuned for depth and split criteria | 72% | Best-performing model overall. |
-| K-Nearest Neighbors (KNN) | Baseline linear classifier | 64% | Moderate accuracy, slower for large data. |
-| Support Vector Machine (SVM) | Tuned for depth and split criteria | 60% | Balanced but computationally heavy. |
-| Neural Network (Keras/TensorFlow) | Baseline linear classifier | 63% | Captured complex patterns effectively. |
+|--------|--------------|-----------|--------|
+| Logistic Regression | Baseline linear classifier | **59%** | Simple and interpretable baseline. |
+| Decision Tree (GridSearchCV) | Tuned for depth and split criteria | **72%** | Best-performing model overall. |
+| K-Nearest Neighbors (KNN) | Tested with k = [3,5,7] | **64%** | Moderate accuracy, slower for large data. |
+| Support Vector Machine (SVM) | Simplified randomized search | **60%** | Balanced but computationally heavy. |
+| Neural Network (Keras/TensorFlow) | 1 hidden layer (100 ReLU units) | **63%** | Captured complex patterns effectively. |
 
+#### Model Performance Summary
 | Model | Accuracy | Precision | Recall | F1-score |
 |--------|-----------|------------|---------|-----------|
 | Decision Tree | 0.720 | 0.722 | 0.720 | 0.716 |
