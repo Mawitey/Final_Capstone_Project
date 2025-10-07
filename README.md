@@ -14,7 +14,8 @@ Target variable: price_category derived from price values:
 - **Low:** < $200,000  
 - **Medium:** $200,000 – $500,000  
 - **High:** $500,000 – $1,000,000  
-- **Luxury:** > $1,000,000 
+- **Luxury:** > $1,000,000
+  
 Main features: bedrooms, bathrooms, lot size, house size, city, and state.
 
 #### Data Preparation
