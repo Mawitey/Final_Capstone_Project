@@ -39,6 +39,14 @@ Outliers confirmed the wide range of home prices across different states.
 | Support Vector Machine (SVM) | Tuned for depth and split criteria | 60% | Balanced but computationally heavy. |
 | Neural Network (Keras/TensorFlow) | Baseline linear classifier | 63% | Captured complex patterns effectively. |
 
+| Model | Accuracy | Precision | Recall | F1-score |
+|--------|-----------|------------|---------|-----------|
+| Decision Tree | 0.720 | 0.722 | 0.720 | 0.716 |
+| KNN | 0.644 | 0.643 | 0.644 | 0.642 |
+| SVM | 0.596 | 0.596 | 0.596 | 0.581 |
+| Neural Network | 0.633 | — | — | — |
+
+
 Decision Tree achieved the highest accuracy (≈72%) and balanced precision/recall.
 KNN and Neural Network performed moderately well.
 SVM achieved 60% accuracy but was optimized for speed.
